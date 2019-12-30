@@ -21,6 +21,11 @@ class userValidator {
 			return false;
 		}
 	}
+
+	mobileRegex(num) {
+		let mobileRegex=RegExp("^[0-9]{2}[ ]{1}[0-9]{10}$");
+           	return mobileRegex.test(num);
+	}
 }
 module.exports = new userValidator();
 

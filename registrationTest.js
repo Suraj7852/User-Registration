@@ -72,3 +72,15 @@ describe('Test for password validator', function() {
    });
 });
 
+describe('Test for mobile number validator', function() {
+   it('should return false if Invalid mobile number', function() {
+      let mobileNumber = validator.mobileRegex("9334158709");
+      assert.equal(mobileNumber,false);
+   });
+
+   it('should return true if valid number', function() {
+      let mobileNumber = validator.mobileRegex("91 9334145702");
+      assert.equal(mobileNumber,true);
+   });
+});
+
