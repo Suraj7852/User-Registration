@@ -1,0 +1,19 @@
+{
+  "name": "userregd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "registration.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suraj7852/User-Registration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suraj7852/User-Registration/issues"
+  },
+  "homepage": "https://github.com/Suraj7852/User-Registration#readme"
+}
