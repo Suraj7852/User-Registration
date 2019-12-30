@@ -11,10 +11,10 @@ class userValidator {
 	}
 
 	passwordRegex(pwd){
-		let passwordRegex = RegExp("^[a-zA-Z0-9]{8,}");
+		let passwordRegex = RegExp("^[a-zA-Z0-9!@#$%^&*()<>-_+]{8,}");
 		let uppercaseRegex = RegExp("[A-Z]");
 		let digitRegex = RegExp("[0-9]");
-		let specialCharacter = RegExp("^([a-zA-Z0-9])*[!@#$%^&*()<>-_+]{1}([a-zA-Z0-9])*$");
+		let specialCharacter = RegExp("^[a-zA-Z0-9]*[!@#$%^&*()<>-_+]{1}[a-zA-Z0-9]*$");
 		if(specialCharacter.test(pwd)){
 			return passwordRegex.test(pwd) && uppercaseRegex.test(pwd) && digitRegex.test(pwd);
 		}else{
