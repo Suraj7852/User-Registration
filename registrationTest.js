@@ -53,6 +53,7 @@ describe('Test for email validator', function() {
       let email = validator.emailRegex("abc@yahoo.com.com");
       assert.equal(email,true);
    });
+});
 
 describe('Test for password validator', function() {
    it('should return true if valid password', function() {
@@ -64,6 +65,10 @@ describe('Test for password validator', function() {
       let password = validator.passwordRegex("Suraj");
       assert.equal(password,false);
    });
-});
+
+   it('should return false if Invalid password', function() {
+      let password = validator.passwordRegex("Aghjkkll$%45");
+      assert.equal(password,false);
+   });
 });
 
